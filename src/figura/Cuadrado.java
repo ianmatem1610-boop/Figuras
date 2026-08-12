@@ -1,18 +1,13 @@
 package figura;
 
 public class Cuadrado {
-    // atributo PRIVADO
     private double lado;
 
-    // Constructores
-    public Cuadrado() {
-    }
-
+    // ÚNICO CONSTRUCTOR: Con parámetros
     public Cuadrado(double lado) {
         this.lado = lado;
     }
 
-    // Metodos de negocio
     public double calcularArea() {
         return Math.pow(this.lado, 2);
     }
@@ -21,7 +16,7 @@ public class Cuadrado {
         return this.lado * 4;
     }
 
-    // los metodos Getter y Setter
+    // Getter y Setter
     public double getLado() {
         return lado;
     }

@@ -1,20 +1,15 @@
 package figura;
 
 public class Rectangulo {
-    // Atributos PRIVADOS ,Encapsulamiento
     private double base;
     private double altura;
 
-    //  losConstructores
-    public Rectangulo() {
-    }
-
+    // ÚNICO CONSTRUCTOR: Con parámetros (Se elimina el constructor por defecto)
     public Rectangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
     }
 
-    // Metodos de negocio
     public double calcularPerimetro() {
         return (2 * this.base) + (2 * this.altura);
     }
@@ -23,7 +18,7 @@ public class Rectangulo {
         return this.base * this.altura;
     }
 
-    //  Metodos Getter y Setter
+    // Getters y Setters
     public double getBase() {
         return base;
     }
