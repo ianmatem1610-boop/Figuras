@@ -1,9 +1,10 @@
 package figura;
 
 public class Cuadrado {
+    // atributo PRIVADO
     private double lado;
 
-    //  losConstructores
+    // Constructores
     public Cuadrado() {
     }
 
@@ -11,17 +12,16 @@ public class Cuadrado {
         this.lado = lado;
     }
 
-    //  el Metodo calcularArea
+    // Metodos de negocio
     public double calcularArea() {
-        return Math.pow(this.lado, 2); 
+        return Math.pow(this.lado, 2);
     }
 
-    // el Metodo calcularPerimetro
     public double calcularPerimetro() {
         return this.lado * 4;
     }
 
-    // el Getter y Setter
+    // los metodos Getter y Setter
     public double getLado() {
         return lado;
     }
